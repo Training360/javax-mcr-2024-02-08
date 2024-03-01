@@ -1,0 +1,35 @@
+###
+GET http://localhost:8081/api/employees
+Accept: application/json
+
+###
+GET http://localhost:8081/api/employees/2
+Accept: application/json
+
+###
+POST http://localhost:8081/api/employees
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Jack Doe"
+}
+
+###
+POST http://localhost:8081/api/employees
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJWaDh0VVdEMzNtMVRzYUQycjE2UVJ3SjZjQnpJbkpTaTJlOUNJc3ByQVZjIn0.eyJleHAiOjE3MDkyOTAxODgsImlhdCI6MTcwOTI4OTg4OCwianRpIjoiZTIwOTViMTktZGIwNS00OGRhLTgyMDgtOWY5YjdhZWNhOTg3IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDkwL2F1dGgvcmVhbG1zL0VtcGxveWVlc1JlYWxtIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6IjEyZWQ5NjNmLTQzOWUtNDE2YS1iOTcxLTI1ZjlmYzZlOGQ5ZSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImVtcGxveWVlcy1mcm9udGVuZCIsInNlc3Npb25fc3RhdGUiOiJmNmE1M2EyMS0zZTlhLTQyZmYtOWJjOC0xYzY2OWIzY2Y3MDEiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsImRlZmF1bHQtcm9sZXMtZW1wbG95ZWVzcmVhbG0iLCJlbXBsb3llZXNfdXNlciJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsInNpZCI6ImY2YTUzYTIxLTNlOWEtNDJmZi05YmM4LTFjNjY5YjNjZjcwMSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJqb2huZG9lIn0.deYv9hBJrhV7hl_K5ecxSUUlAlFRJ-yFvd8nGN8eNYK9m8U5I8ZAZV4SuHE7gWA0qxHYH1cLmjJXysB7dc2VOqMm2oESlIUx91SN6baTTuxgxuuLp0i2Pe2n9mDj1rBrWCqV76rX7N1Tr3rgxiamjKJW0PxA92CVckDd_OK_z22g9D-Dt9u5vT5VjriOFupa866Q4nXHw_GQot4TIsz1D7jw2WjhzxZ5c7YjtsjLwrZl9TJouIKTnNGC6W4zvnd49N0CpvMxvMO3oFfDAtWjSOZA61HmJNZKI-UvKzE_0tHD9IYJqirJffaGts41hyFk89G4vswPw1MhSqjLsQvg4A
+
+{
+  "name": "Jack Doe"
+}
+
+###
+PUT http://localhost:8081/api/employees/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "John Doe"
+}

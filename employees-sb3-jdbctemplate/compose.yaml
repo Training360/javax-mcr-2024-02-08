@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  zipkin:
+    image: openzipkin/zipkin
+    expose:
+      - 9411
+    ports:
+      - "9411:9411"
+
+  postgresql:
+    image: postgres
+    expose:
+      - 5432
+    environment:
+      POSTGRES_DB: employees
+      POSTGRES_USER: employees
+      POSTGRES_PASSWORD: employees
+    ports:
+      - "5432:5432"
